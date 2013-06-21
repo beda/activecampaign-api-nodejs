@@ -4,36 +4,48 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>ActiveCampaign API for Node.js by ActiveCampaign</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
-    <div class="wrapper">
+
       <header>
-        <img src="http://d226aj4ao1t61q.cloudfront.net/u7wjxqemu_128x128a.png" />
         <h1>ActiveCampaign API for Node.js</h1>
         <p>Node.js wrapper for the ActiveCampaign API.</p>
-
-        <p class="view"><a href="https://github.com/ActiveCampaign/activecampaign-api-nodejs">View the Project on GitHub <small>ActiveCampaign/activecampaign-api-nodejs</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/ActiveCampaign/activecampaign-api-nodejs/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/ActiveCampaign/activecampaign-api-nodejs/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/ActiveCampaign/activecampaign-api-nodejs">View On <strong>GitHub</strong></a></li>
-        </ul>
       </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/ActiveCampaign/activecampaign-api-nodejs" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/ActiveCampaign/activecampaign-api-nodejs/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/ActiveCampaign/activecampaign-api-nodejs/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
       <section>
-        <h1>activecampaign-api-nodejs</h1>
+        <h1>
+<a name="activecampaign-api-nodejs" class="anchor" href="#activecampaign-api-nodejs"><span class="octicon octicon-link"></span></a>activecampaign-api-nodejs</h1>
 
 <p>Node.js wrapper for the ActiveCampaign API.</p>
 
-<h2>Installation</h2>
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <p>Install using NPM:</p>
 
@@ -43,11 +55,13 @@
 
 <p><code>git clone git://github.com/ActiveCampaign/activecampaign-api-nodejs.git activecampaign</code></p>
 
-<h2>Requirements</h2>
+<h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
 <ol>
 <li>Valid ActiveCampaign hosted account.</li>
-</ol><h2>Example Usage</h2>
+</ol><h2>
+<a name="example-usage" class="anchor" href="#example-usage"><span class="octicon octicon-link"></span></a>Example Usage</h2>
 
 <pre>
 var ActiveCampaign = require("activecampaign");
@@ -77,7 +91,7 @@ var account = ac.api("account/view", {}, function(response) {
   }
 });
 
-var subscriber_exists = ac.api("subscriber/view?email=test@example.com", {}, function(response) {
+var contact_exists = ac.api("contact/view?email=test@example.com", {}, function(response) {
     console.log(response);
 });
 
@@ -97,20 +111,22 @@ var list_add = ac.api("list/add", list, function(response) {
 });
 </pre>
 
-<h2>Full Documentation</h2>
+<h2>
+<a name="full-documentation" class="anchor" href="#full-documentation"><span class="octicon octicon-link"></span></a>Full Documentation</h2>
 
 <p><a href="http://activecampaign.com/api">View our full API documentation</a>.</p>
 
-<h2>Reporting Issues</h2>
+<h2>
+<a name="reporting-issues" class="anchor" href="#reporting-issues"><span class="octicon octicon-link"></span></a>Reporting Issues</h2>
 
 <p>We'd love to help if you have questions or problems. Report issues using the <a href="https://github.com/ActiveCampaign/activecampaign-api-nodejs/issues">Github Issue Tracker</a> or email <a href="mailto:help@activecampaign.com">help@activecampaign.com</a>.</p>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/ActiveCampaign">ActiveCampaign</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p>Project maintained by <a href="https://github.com/ActiveCampaign">ActiveCampaign</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
